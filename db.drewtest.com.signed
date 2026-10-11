@@ -1,0 +1,160 @@
+; File written on Sun Oct 11 10:35:23 2026
+; dnssec_signzone version 9.18.50
+drewtest.com.		86400	IN SOA	ns1.drewtest.com. admin.drewtest.com. (
+					2024100601 ; serial
+					3600       ; refresh (1 hour)
+					1800       ; retry (30 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 8 2 86400 (
+					20261110093523 20261011093523 9018 drewtest.com.
+					EgQ1tOGha49CEmFo0m7Q++S+Ky/ZEqXrqU/H
+					lsdrlbWK6bVUBk6JH/jzSfRG85RbXA24YKBi
+					R2RS5K27xqqAVa4rcim/Cpxe4PNZhpp9jFHl
+					0I6jY1FNi5WDoNTg5jfbZkoqa4GC0Vc6BM5G
+					6wO9i/TmsavJ8KPt2xW6anbHYLKiaV9uaD4J
+					B6Pnq5+V/wIYrbas4kZ0KV674aszu931ki3U
+					OAM4OT60KKrwwub5bBCG48pYmqcLxrtqth+M
+					AQbTCOHraAC8GPwS5YYRCIw/dcfHaeCNxFK6
+					6GBWuDmE0GGZOcWP1Obvqy/deACqoj1gBQaR
+					UCacmxHFF2KxVtEb3w== )
+			86400	NS	ns1.drewtest.com.
+			86400	RRSIG	NS 8 2 86400 (
+					20261110093523 20261011093523 9018 drewtest.com.
+					UbTV5fxlFiCBA7nAZ97SuSo4dQMG/xgd1u9R
+					IB3Q6hv5j9oVvgT2U5chElTAnmICQWesP1Q5
+					7rQtLz/akqJXZ+OodtqQrBP+VCIPU9KOmi89
+					TZTzgPfEsKl/x76LgY+XsvmygR379WKv9vSd
+					xZVmRQNPPTb6st4slWWEwF5Fga5pwG26Dc47
+					E1bZX7zPWySI1OWdaIB8ZbGxmxuZNq7YMgIQ
+					90IveGYi11laqn6/qHvtcGJMerxO52/gu5E5
+					PjOciVp+Gh4zPUPOWL4l8AzBv0v+ng8Lr8sc
+					v5hia+EejwFusdhdyELtmSyxV3u/AIs6/q1D
+					R+QTmHHn6s0CQI1Uvg== )
+			86400	A	127.0.0.1
+			86400	RRSIG	A 8 2 86400 (
+					20261110093523 20261011093523 9018 drewtest.com.
+					Q5PJzLsa77Uxqs/cACpAg6PslZvGXd+6Z/8r
+					Htny7BoFimneujnZ8YBjLzJ9WcrYu6Tgws+S
+					vX/Snw0MS8+dQX2Ob6cJOlMffhOLAXuTomqr
+					H3QjpyYPpakZXEdXfEy6Ojq0n5b3OjpGOHT+
+					iHv53kryT2QUsavUGl3GY7OC+1zxKU+v3asF
+					43SlvfmlCFy53uVU73ZGWUSzQ/5YWPUaPUVD
+					QdArqpTUsfo79RyIMve9WLDPsKdYWVIVohgb
+					pSWX8cezLsjZ0VIDOrRH25iaoJUH40hI8YGP
+					VVG0+Rygyz76eZzlx/YL+WQ6TH7UgtrSePK5
+					ZV2tWnplzkpNujWcVQ== )
+			86400	NSEC	ns1.drewtest.com. A NS SOA RRSIG NSEC DNSKEY
+			86400	RRSIG	NSEC 8 2 86400 (
+					20261110093523 20261011093523 9018 drewtest.com.
+					csyIxZSuSORTz18KZ/eMUwQ5HTuiTxcniddl
+					OkCVcU27om8CYp97dJSDeO2DdTk5u14A/is/
+					ZyIqaTTNaopx4ecv+iV4lDugoNk1IdBnH/5L
+					kBsM223u0D85peTcv7MB3ZTliWz4UqrSUdNG
+					sqbEQSgixbkVKrKDSfn3HagPwRSXrfu/Rarq
+					yfndqe6b0SnzSzDWbYPDxDAHcFv6ddzjSnCW
+					7HQjW4h9fByB6Hh5X7b/y8SdT8rGHeqLQwfv
+					yHS8W8f09r6sVElagODOvHnzzJFIPdaPX8C9
+					daBu1yvWbnw7FZw1028QMwre06Z9gRGtIBOL
+					x8fNJgjLeL+infvvEw== )
+			86400	DNSKEY	257 3 8 (
+					AwEAAdGuRjst0/cSswCychPozqKl648Ra9FU
+					q2/39U73o4HLUaTq+GGM3atZoV83k2T+z+Sf
+					OYUcs8bOQbROUy+xU7oc3AhxUrZt/5hKoaSw
+					RKmfo3GSeL80jf59/xKyNjknCqAjcKigXtGr
+					llHQFGqtE5LwdQrf8ZwKFEjGsYtld84vPnKf
+					aSRSwtHT/pquraYJOdjR53lLtSqvIzBWTQKg
+					D8dEYImHXSSpCVtUL0sMIbAvL9nh/g1cNBz8
+					UaZoVmr8imUAdLpBH47WFm2bEJCqXI2EHk95
+					ldQNigkhn4Djdth9nHnr58Psti0sNFhEIULD
+					ihZaw7Z81pvVYyXEBNpaygU=
+					) ; KSK; alg = RSASHA256 ; key id = 4751
+			86400	DNSKEY	256 3 8 (
+					AwEAAbuWTFnzH7MBx7Eo/n2Yqr0cHB7inrXw
+					uZOAtFOMHiti5cjZ62grnEoTEhRRpj6OR032
+					lkuU/5VZgLP9XdMwlXfvJd7mv+ekSrfQzeui
+					gMVIt1/R+qEr0h+AIVp6qiPme3rFx/wxT/cL
+					ynz/N5qQaf4W1bRP0be2rfdY66G/ogokgHO/
+					eqRsglPArrnq3LXABekMyAJ58dKlLPwuXanQ
+					85301uhjn7ocwU9uE9CgGQo5u0KfhCid5wLM
+					HeHfJXQKB6J/tc3vs1awxnF+rFGEeRdd5DEH
+					3v7frFWDR5Mftzac0y5Mz0VFWfFteGSUkzM2
+					CCAd/pd2MQdl2fsfxTG8P0s=
+					) ; ZSK; alg = RSASHA256 ; key id = 9018
+			86400	RRSIG	DNSKEY 8 2 86400 (
+					20261110093523 20261011093523 9018 drewtest.com.
+					bIuzbDswyrHhz4FulK4yNKoVsMZ+lSZ2TCMG
+					NcpdMKVl4frL8OCvatt5kA+1taZ2D+B46OXl
+					iwsrtZKTzlWjY9xJU3whsggmjZiJzlAWpzPv
+					CM2lsABGvI8OQVND2yjLUC8kNiINfwXGwUQo
+					F+QOTuE/X7Pd/bqAe6W5pAAchCKFACHXB028
+					QCq9PkyafVYC4QT4OjMlQZAjhzvWQPQW6HEc
+					XG9YHosj9X33HamCECJER2HyJ9LDnCfJcYtS
+					avncgiA0q1R2HGLyTg626khIgJMJ/zKNd5BK
+					+ZqV//4q0407dXKRwXIGlZCMUupDYb2beZXB
+					8IQMLqvDMu5mJAcXAg== )
+			86400	RRSIG	DNSKEY 8 2 86400 (
+					20261110093523 20261011093523 4751 drewtest.com.
+					g+NZ3sj11ECuUXOJydjifZALWClraH2Jx9I3
+					5FvcDsLnt+vi+RZ4CypxhfgSGMOMe0d1cupV
+					HrszoqZbrUjdaEJXKv3Lk2IklX9/9DQcef/k
+					8mnSR+nLbipH197l4w7bjqYDkWST8F626QAW
+					yq9OLzgWdOBVTaqSTocm368DXiwZjkEWIcWZ
+					bLDtiXfVjbpymbz/j9iiz9yvmLyR/2KtjqS9
+					2kV8Q5Z7Zo+J3DXdKSvADQaSA4lwuuEj+zKX
+					j1MjPpRYUpML7iENqryp2R9wOYThEci+76fj
+					i+ruEEyKmUK9+9wMNRHfHZZHHj5ThVdgwkZJ
+					/NhWzCZDhQUENZ5ehw== )
+ns1.drewtest.com.	86400	IN A	127.0.0.1
+			86400	RRSIG	A 8 3 86400 (
+					20261110093523 20261011093523 9018 drewtest.com.
+					X8hfU8r3h82KaU9rkTQVIHQMdNPS+z1fNJDi
+					KVik4jI1CWJODBkwFOsCEBA8vNpwm7uZla4L
+					NwOjZ/NM7+h8H3lWwARM6VTcyjWpxZq3vt9y
+					9Yqqq4m8KlqnX8c4l0WbAAgS7+qnsB78gawa
+					/1KIzB0v4awhdHCS/jUSUJpBsIGJghSIF6ZM
+					kDL8YqO4yYLpG2YyeygMZleFuMezb9ztOSLx
+					lVob1m7untuxC2etOECMGsdEJFcphUXVuvvD
+					XRpXQeAoHboq09cxZ0a9VYDTucANpbmaAGhW
+					bZRKmZsNUDpZ3UQGCND1Z52HrRUm2ipNMhC6
+					F+YKeusEIt+GGJH/zw== )
+			86400	NSEC	www.drewtest.com. A RRSIG NSEC
+			86400	RRSIG	NSEC 8 3 86400 (
+					20261110093523 20261011093523 9018 drewtest.com.
+					LVWdR91J5/UU7UH6/Xec9X5tBg9ZQXYOX7Qu
+					0jYH5zupT4r2/JQo/C/JyjM8JmgLcw/7Hgb7
+					ZKCujn+cHiYX7fDrRHKno3lMGR0T9phxOxsg
+					AiYZYbmCnIzJHn+gF2Uy7LcDf02kYIBXqYhe
+					BUcfjpCLxtIcmgQTD8RZsThQb3lcpYsjZxu0
+					qDsRwTUzkBPU9Tac452ziBhVXP49WP9be+f0
+					n3eanVvUucL724m3YR67YvAFz19AqeL5oL3S
+					sxOKXxtgMJS7oQOiQDzMVQxpBgjfDAz55R1+
+					bnCZg7dkgTq06Iw4C/kNVzTqKAeZVce5ZOlC
+					/Y3prpYpq6uYDTk9UA== )
+www.drewtest.com.	86400	IN A	127.0.0.1
+			86400	RRSIG	A 8 3 86400 (
+					20261110093523 20261011093523 9018 drewtest.com.
+					XBQguZ7DyLfef3wZH8d8aTLn4yndnXIvNt+/
+					MTtAN9ZSszwMvtQ+BxWuBHbTJtvbBc12jd3c
+					Wo9P/un4+TigjthlAfyzBMkFpEkHsYy+zQ0T
+					V9wwZI7l9BPeFP2Qnnx+HcQoKH7dkcpu8G+5
+					hfQJ5oiMgN8OrhTvKECXJqPEkZgIYC9s4NGx
+					6FR/+Vh17vDWmy+Kn+Zm5P8GQPaScpKdPX6Z
+					N+TYvWVRSP1EOWy6qOO3cMnsKf4P0WxGbCEl
+					N6qOPpDQ5ErP8bTXE1P53x5s2Lcjgd7wjLK+
+					2JVldiL4y1dEHvWJWxNf7adU5vMQC4LF562m
+					hCuYuh/MsVxTNnVx1g== )
+			86400	NSEC	drewtest.com. A RRSIG NSEC
+			86400	RRSIG	NSEC 8 3 86400 (
+					20261110093523 20261011093523 9018 drewtest.com.
+					jNVJui+sJqOywFAXilJx9msnICvfygpTQxRF
+					zLAadM3ZlxXQgl0Ay8hLkgNHYb+T5a8S1jJp
+					oUT48G2O6xA1SxYk6kyKM5MOo72FQagXuLKi
+					nSorfGiUICte9rIB8mjMgRmxM7qY2qDoGxpt
+					atjPBR31++4TszMaKzTYAgWu7dFNaBOTKa36
+					nehiTcapPnnDpe5TuLXnd4D8lZrj+OWH7X13
+					dVZRcLe3GcfatKU5ecGIcffhG1SNyK2J4ill
+					uq/nrB2mjZsapt/43ak4vG9hAZCINFcSAq2O
+					Zpvw2x0aDJIbGnRS02jNNPO0oJSN6uvxTiVw
+					LknLSKC44RiFR9tO4A== )

@@ -1,0 +1,2 @@
+# DNSSEC private keys - NEVER commit these
+*.private
