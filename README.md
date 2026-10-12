@@ -15,7 +15,7 @@ A hands-on project where I built and secured an authoritative DNS server for `dr
 | Item | Value |
 |------|-------|
 | Cloud | AWS EC2 |
-| OS | Amazon Linux (uses `dnf`, not `yum`) |
+| OS | Amazon Linux |
 | DNS software | BIND 9 (`bind`, `bind-utils`) |
 | Domain | `drewtest.com` |
 | Zone file | `/etc/named/zones/db.drewtest.com` |
