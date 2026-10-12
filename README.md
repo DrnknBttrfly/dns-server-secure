@@ -35,8 +35,8 @@ sudo systemctl status named
 sudo cp /etc/named.conf /etc/named.conf.backup
 sudo nano /etc/named.conf
 ```
-Changed 'listen to port 53' to 'any' instead of '127.0.0.1'
-Changed the localhost to 'any'
+- Changed 'listen to port 53' to 'any' instead of '127.0.0.1'
+- Changed the localhost to 'any'
 
 ```bash
 sudo systemctl restart named
@@ -46,9 +46,9 @@ sudo mkdir -p /etc/named/zones
 sudo nano /etc/named/zones/db.drewtest.com
 sudo nano /etc/named.conf
 ```
-Changed 'zone "." IN' to 'zone "drewtest.com" IN'
-Changed 'type' to 'master'
-Changed 'file "/etc/named/zones/db.drewtest.com"', saved and restarted the named
+- Changed 'zone "." IN' to 'zone "drewtest.com" IN'
+- Changed 'type' to 'master'
+- Changed 'file "/etc/named/zones/db.drewtest.com"', saved and restarted the named
 
 - `dnf` is the package manager on Amazon Linux.
 - `-y` automatically answers "yes" to prompts.
