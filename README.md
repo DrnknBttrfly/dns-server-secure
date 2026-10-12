@@ -50,6 +50,7 @@ sudo nano /etc/named.conf
 - Changed 'type' to 'master'
 - Changed 'file "/etc/named/zones/db.drewtest.com"', saved and restarted the named
 
+## NOTES:
 - `dnf` is the package manager on Amazon Linux.
 - `-y` automatically answers "yes" to prompts.
 - `bind` is the DNS server; `bind-utils` provides testing tools like `dig`.
