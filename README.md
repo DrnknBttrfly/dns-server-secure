@@ -24,7 +24,7 @@ A hands-on project where I built and secured an authoritative DNS server for `dr
 
 ---
 
-## Step 1: Install BIND
+## Step 1: Install BIND & build DNS
 
 ```bash
 sudo dnf update -y
