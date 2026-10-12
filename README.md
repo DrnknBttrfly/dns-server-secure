@@ -178,12 +178,12 @@ Proof the setup works, taken from the live server:
 
 | Problem | Cause / fix |
 |---------|-------------|
-| `firewall-cmd: command not found` | `firewalld` wasn't installed. Install it with `dnf` |
-| `recursion redefined` from `named-checkconf` | There was already a `recursion` line. Edit the existing one instead of adding a second |
+| `firewall-cmd: command not found` | `firewalld` wasn't installed. Installed it with `dnf` |
+| `recursion redefined` from `named-checkconf` | There was already a `recursion` line. Edited the existing one instead of adding a second |
 | `dnssec-signzone: file not found` | Wrong path. The directory is `zones`, not `zone` |
 | `No signing keys specified or found` | Keys were in `/home/ec2-user/`, not next to the zone file, and the public keys weren't in the zone file yet |
 | `cd: permission denied` into `/etc/named/zones` | Directory is root-only. Use `sudo -s` for a root shell |
-| `dig @localhost` connection refused | `listen-on` didn't include `127.0.0.1`, or BIND wasn't restarted after the edit |
+| `dig @localhost` connection refused | `listen-on` didn't include `127.0.0.1` as I had replaced it out during configuration. In addition, BIND wasn't restarted after the last edit |
 
 ## Security notes
 
