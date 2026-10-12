@@ -1,0 +1,53 @@
+[ec2-user@ip ~]$ whoami
+ec2-user
+[ec2-user@ip ~]$ sudo dnf install bind bind-utils -y
+
+Installed:
+  bind-32:9.18.50-1.amzn2023.0.3.x86_64                                         
+  bind-dnssec-utils-32:9.18.50-1.amzn2023.0.3.x86_64                            
+
+Complete!
+[ec2-user@ip ~]$ sudo systemctl start named
+[ec2-user@ip ~]$ sudo systemctl enable named
+Created symlink /etc/systemd/system/multi-user.target.wants/named.service → /usr/lib/systemd/system/named.service.
+[ec2-user@ip ~]$ sudo systemctl status named
+● named.service - Berkeley Internet Name Domain (DNS)
+     Loaded: loaded (/usr/lib/systemd/system/named.service; enabled; preset: di>
+     Active: active (running) since Thu 2026-10-08 09:50:48 UTC; 45s ago
+
+[ec2-user@ip ~]$ sudo cp /etc/named.conf /etc/named.conf.bckup
+[ec2-user@ip ~]$ sudo cp /etc/named.conf /etc/named.conf.backup
+[ec2-user@ip ~]$ sudo nano /etc/named.conf
+[ec2-user@ip ~]$ sudo nano /etc/named.conf
+[ec2-user@ip ~]$ sudo systemctl restart named
+[ec2-user@ip ~]$ nslookup localhost 127.0.0.1
+Server:		127.0.0.1
+Address:	127.0.0.1#53
+
+Name:	localhost
+Address: 127.0.0.1
+Name:	localhost
+Address: ::1
+
+[ec2-user@ip ~]$ sudo nano /etc/named/zones/db.drewtest.com
+[ec2-user@ip ~]$ sudo mkdir -p /etc/named/zones
+[ec2-user@ip ~]$ sudo nano /etc/named/zones/db.drewtest.com
+[ec2-user@ip ~]$ sudo cat /etc/named/zones/db.drewtest
+cat: /etc/named/zones/db.drewtest: No such file or directory
+[ec2-user@ip ~]$ sudo cat /etc/named/zones/db.drewtest.com
+$TTL 86400
+@   IN  SOA ns1.drew-test. admin.drew-test. (
+            2024100601  ; Serial
+            3600        ; Refresh
+            1800        ; Retry
+            604800      ; Expire
+            86400       ; Minimum TTL
+            )
+@   IN  NS  ns1.drew-test.
+ns1 IN  A   127.0.0.1
+@   IN  A   127.0.0.1
+www IN  A   127.0.0.1
+[ec2-user@ip ~]$ sudo nano /etc/named.conf
+[ec2-user@ip ~]$ sudo systemctl restart named
+[ec2-user@ip ~]$ nslookup drewtest.com 127.0.0.1
+Server:		127.0.0.1
