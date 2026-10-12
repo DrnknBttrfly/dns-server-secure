@@ -50,7 +50,7 @@ sudo nano /etc/named.conf
 - Changed 'type' to 'master'
 - Changed 'file "/etc/named/zones/db.drewtest.com"', saved and restarted the named
 
-## NOTES:
+## Notes:
 - `dnf` is the package manager on Amazon Linux.
 - `-y` automatically answers "yes" to prompts.
 - `bind` is the DNS server; `bind-utils` provides testing tools like `dig`.
@@ -72,6 +72,7 @@ sudo firewall-cmd --permanent --add-service=dns
 sudo firewall-cmd --reload
 ```
 
+## Notes:
 - `--permanent` keeps the rule after a reboot.
 - `--reload` applies it right away.
 
@@ -117,6 +118,7 @@ dnssec-keygen -a RSASHA256 -b 2048 -n ZONE drewtest.com
 dnssec-keygen -a RSASHA256 -b 2048 -n ZONE -f KSK drewtest.com
 ```
 
+## Notes:
 - `-a RSASHA256`: signing algorithm
 - `-b 2048`: key size in bits
 - `-n ZONE`: the key is for a DNS zone
@@ -148,6 +150,7 @@ dnssec-signzone -o drewtest.com db.drewtest.com
 exit
 ```
 
+## Notes:
 - `-o drewtest.com` sets the zone origin (the domain name).
 - Output: `db.drewtest.com.signed`
 
