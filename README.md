@@ -223,6 +223,12 @@ Proof the setup works, taken from the live server:
 - [ ] Rate limiting (`rate-limit` in BIND) to reduce abuse.
 - [ ] Restrict SSH access in the AWS security group.
 
+## Things that broke
+
+	•	firewall-cmd not found: turns out firewalld wasn’t installed by default. Fixed it with sudo dnf install firewalld.
+	•	dnssec-signzone said file not found: I had the path wrong. The folder is zones, not zone.
+	•	No signing keys specified or found: keys were in my home folder, not next to the zone file. I copied them over and added the DNSKEY lines to the zone file itself (this one took 3 attempts).”
+
 ## What I learned
 
 - The difference between an authoritative and a recursive DNS server, and why open recursion is dangerous
